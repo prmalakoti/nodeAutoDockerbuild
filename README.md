@@ -37,30 +37,6 @@
 # more info: https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/configuring-the-self-hosted-runner-application-as-a-service
 ```
 
-## Docker commands
-
-### Local system
-
-```bash
-#A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image
-docker init
-
-#yml file. It specifies what images are required, what ports they need to expose, whether they have access to the host filesystem, what commands should be run when they start up, and so on
-docker compose up --build
-
-#run docker image background
-docker compose up --build -d
-
-#stop the docker image
-docker compose down
-
-#list of docker images
-docker images
-
-#list of running containers
-docker ps
-```
-
 ### Push Docker image to docker hub
 
 ```bash
@@ -84,6 +60,7 @@ docker ps
 3.  Docker commands:
 
 ```
+0. docker init
 1. bash docker build -t image-name . — Build an image with a tag
 2. docker run -p 4001:4000 image-name — Run a container, mapping ports
 3. docker images — List all images
