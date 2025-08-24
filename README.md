@@ -71,3 +71,36 @@ docker ps
 4. docker tag apiratelimit-server(local image name) prashantmalakoti701/api-rate-limit(hub created repo name)
 5. docker push prashantmalakoti701/api-rate-limit
 ```
+
+
+ # Docker Summary
+
+1. dockerignore
+  `A file that lists files and folders to exclude from the Docker build context, speeding up builds and keeping images smaller.`
+
+2. Dockerfile
+`A text file with step-by-step instructions to build a Docker image for your app. It sets the base image, copies code, installs dependencies, and defines how to run the app inside a container.`
+
+3.  Docker commands:
+
+```
+1. bash docker build -t image-name . — Build an image with a tag
+2. docker run -p 4001:4000 image-name — Run a container, mapping ports
+3. docker images — List all images
+4. docker ps — List running containers
+5. docker stop container_id / docker kill container_id — Stop a container
+6. docker rm container_id — Remove a container
+7.docker rmi image_id — Remove an image
+```
+
+4. docker-compose.yml
+`A YAML config file for Docker Compose to define and manage multiple containers as services. It configures image building, networking, ports, volumes, environment variables, and service dependencies.`
+
+5. Common Docker Compose commands:
+
+```bash
+1. docker-compose build — Build all services defined in compose file
+2. docker-compose up -d [service] — Start containers in detached mode
+3. docker-compose down — Stop and remove containers, networks
+4. docker volume ls — List Docker volumes
+```
